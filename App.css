@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #1f4037, #99f2c8);
+  color: #333;
+}
+
+/* MAIN */
+.main {
+  width: 100%;
+  text-align: center;
+}
+
+/* HEADER */
+.header {
+  padding: 20px;
+  background: #0f2027;
+  color: white;
+}
+
+.header h1 {
+  font-size: 2rem;
+}
+
+.header p {
+  opacity: 0.8;
+}
+
+/* HERO IMAGE */
+.hero img {
+  width: 90%;
+  max-width: 900px;
+  border-radius: 20px;
+  margin: 20px 0;
+  transition: transform 0.4s;
+}
+
+.hero img:hover {
+  transform: scale(1.05);
+}
+
+/* CARD */
+.card {
+  background: white;
+  margin: 20px auto;
+  padding: 25px;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* SELECT */
+select {
+  padding: 10px;
+  border-radius: 10px;
+  margin: 15px 0;
+  border: 1px solid #ccc;
+}
+
+/* BUTTONS */
+.buttons {
+  margin-top: 15px;
+}
+
+button {
+  padding: 12px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button.on {
+  background: #28a745;
+  color: white;
+}
+
+button.off {
+  background: #dc3545;
+  color: white;
+}
+
+button:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
+/* INFO SECTION */
+.info {
+  padding: 30px;
+  background: #ffffffcc;
+  margin: 20px;
+  border-radius: 20px;
+}
+
+.info h2 {
+  margin-bottom: 10px;
+}
+
+.info p {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+/* FOOTER */
+footer {
+  padding: 15px;
+  background: #0f2027;
+  color: white;
+  margin-top: 20px;
+}
+
+/* 📱 RESPONSIVE */
+@media (max-width: 600px) {
+  .header h1 {
+    font-size: 1.5rem;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  button {
+    width: 80%;
+  }
+}
